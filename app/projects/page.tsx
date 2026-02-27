@@ -13,7 +13,7 @@ const allProjects = [
     description: "A comprehensive ad campaign exploring character development and visual narrative through meticulous style sheets and art direction.",
     category: "Campaign / Art Direction",
     year: "2024",
-    color: "#E8D5C4",
+    color: "#2A2A2A",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const allProjects = [
     description: "Mineral-knit athlete concept blending geological textures with high-performance sportswear. A study in material innovation.",
     category: "Concept / Product",
     year: "2024",
-    color: "#D4E4E0",
+    color: "#333333",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const allProjects = [
     description: "Circularity and mutual exchange visualized through geometric precision. A logo system that breathes and adapts.",
     category: "Identity / Event",
     year: "2023",
-    color: "#E4D4E0",
+    color: "#1F1F1F",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const allProjects = [
     description: "Digital-first editorial experience reimagining how fashion stories are told in the modern age.",
     category: "Editorial / Digital",
     year: "2023",
-    color: "#F0E4D4",
+    color: "#252525",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const allProjects = [
     description: "Environmental graphics and wayfinding system for flagship retail locations.",
     category: "Spatial / Identity",
     year: "2023",
-    color: "#E0E4D4",
+    color: "#3A3A3A",
   },
 ];
 

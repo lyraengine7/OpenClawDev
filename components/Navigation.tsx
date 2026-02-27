@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const navItems = [
@@ -37,7 +37,7 @@ export function Navigation() {
             : "bg-[#1A1A1A]"
         }`}
       >
-        {navItems.map((item, index) => (
+        {navItems.map((item) => (
           <Link
             key={item.label}
             href={item.href}

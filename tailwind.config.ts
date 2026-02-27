@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        serif: ["var(--font-cormorant)", "Georgia", "serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -16,4 +20,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

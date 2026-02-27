@@ -3,25 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-inter: 'Inter', sans-serif;
+  --font-cormorant: 'Cormorant Garamond', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+* {
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  * {
+    cursor: auto;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  font-weight: 400;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.font-serif {
+  font-family: var(--font-cormorant);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background: #1A1A1A;
+  color: #FAFAFA;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1A1A;
+  border-radius: 4px;
+}
+
+/* Loading animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-count {
+  animation: countUp 0.3s ease-out;
 }
